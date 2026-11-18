@@ -331,4 +331,96 @@ footer p {
         padding: 60px 8%;
     }
 
+} 
+/* =================================
+   HUJAN BINTANG BERSINAR
+================================= */
+
+.star-rain {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    pointer-events: none;
+    z-index: 9999;
 }
+
+.falling-star {
+    position: absolute;
+    top: -40px;
+    color: #ffffff;
+
+    text-shadow:
+        0 0 5px #fff,
+        0 0 10px #19b7ff,
+        0 0 20px #19b7ff,
+        0 0 35px #8a5cff;
+
+    animation:
+        starFall linear forwards,
+        starGlow 1.5s ease-in-out infinite alternate;
+}
+
+/* BINTANG JATUH */
+
+@keyframes starFall {
+
+    0% {
+        transform: translateY(-40px) rotate(0deg);
+    }
+
+    50% {
+        transform: translateY(50vh) translateX(35px)
+                   rotate(180deg);
+    }
+
+    100% {
+        transform: translateY(110vh) translateX(-35px)
+                   rotate(360deg);
+    }
+}
+
+/* EFEK BERKILAU */
+
+@keyframes starGlow {
+
+    from {
+        opacity: 0.3;
+        filter: brightness(0.7);
+    }
+
+    to {
+        opacity: 1;
+        filter: brightness(2);
+    }
+}
+
+/* EFEK KARTU BERCAHAYA */
+
+.card:hover {
+    box-shadow:
+        0 0 10px rgba(25, 183, 255, .3),
+        0 0 25px rgba(25, 183, 255, .2);
+
+    transform: translateY(-7px);
+    border-color: #19b7ff;
+}
+
+/* RESPONSIVE HP */
+
+@media (max-width: 600px) {
+    .falling-star {
+        font-size: 14px;
+    }
+}
+
+/* MENGURANGI ANIMASI JIKA DIPERLUKAN */
+
+@media (prefers-reduced-motion: reduce) {
+    .falling-star {
+        animation: none;
+    }
+}
+
