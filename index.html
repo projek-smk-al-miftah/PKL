@@ -4,424 +4,321 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="theme-color" content="#071525">
-    <meta name="description" content="WEB AREA - Belajar teknologi, jaringan komputer, dan membuat QR Code.">
 
-    <title>WEB AREA | Digital Technology</title>
+    <title>Website Santri | Daftar Website</title>
+
+    <meta name="description" content="Kumpulan website karya santri dan anggota.">
 
     <link rel="stylesheet" href="style.css">
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
-<!-- BACKGROUND EFFECT -->
-<div class="background-glow"></div>
+    <!-- HEADER -->
+    <header>
+        <div class="logo">SANTRI<span>WEB</span></div>
 
-<!-- NAVBAR -->
-<header class="navbar">
-    <a href="#home" class="logo">
-        WEB<span>AREA.</span>
-    </a>
+        <nav>
+            <a href="#beranda">Beranda</a>
+            <a href="#anggota">Daftar Website</a>
+            <a href="#tentang">Tentang</a>
+        </nav>
+    </header>
 
-    <nav>
-        <a href="#home">Beranda</a>
-        <a href="#login">Login</a>
-        <a href="#qr">QR Code</a>
-        <a href="#belajar">Belajar</a>
-    </nav>
+    <!-- HERO -->
+    <section class="hero" id="beranda">
 
-    <a href="#login" class="nav-button">Mulai Sekarang</a>
-</header>
+        <div class="hero-content">
+            <p class="label">WELCOME TO SANTRI WEB</p>
 
-<!-- HERO SECTION -->
-<section class="hero" id="home">
+            <h1>
+                Kumpulan Website
+                <span>Santri Digital</span>
+            </h1>
 
-    <div class="hero-content">
-
-        <span class="hero-label">
-            ✦ DIGITAL TECHNOLOGY 2026
-        </span>
-
-        <h1>
-            WELCOME TO<br>
-            <span>WEB AREA</span>
-        </h1>
-
-        <p>
-            Selamat datang di Web Area. Tempat belajar teknologi,
-            jaringan komputer, membuat QR Code, dan mengembangkan
-            kemampuan digital masa depan.
-        </p>
-
-        <div class="hero-buttons">
-            <a href="#login" class="btn-primary">Mulai Belajar →</a>
-            <a href="#belajar" class="btn-outline">Jelajahi Website</a>
-        </div>
-
-        <div class="hero-stats">
-            <div>
-                <h3>100%</h3>
-                <p>Digital</p>
-            </div>
-            <div>
-                <h3>24/7</h3>
-                <p>Online</p>
-            </div>
-            <div>
-                <h3>TKJ</h3>
-                <p>Technology</p>
-            </div>
-        </div>
-
-    </div>
-
-    <div class="hero-image">
-        <div class="image-circle"></div>
-
-        <img
-            src="images/Neon_Red_Cyber_Network_TKJ.png"
-            alt="Cyber Network TKJ"
-            onerror="this.src='https://images.unsplash.com/photo-1518770660439-4636190af475?w=900'"
-        >
-
-        <div class="floating-card">
-            <span class="status-dot"></span>
-            SYSTEM ONLINE
-        </div>
-    </div>
-
-</section>
-
-<!-- ABOUT -->
-<section class="about section" id="belajar">
-
-    <div class="section-heading">
-        <span>ABOUT WEB AREA</span>
-        <h2>Explore The Digital World</h2>
-        <p>
-            Kenali teknologi dan pelajari berbagai fitur
-            yang tersedia dalam website ini.
-        </p>
-    </div>
-
-    <div class="feature-grid">
-
-        <div class="feature-card">
-            <div class="feature-icon">🌐</div>
-            <h3>Web Technology</h3>
             <p>
-                Mengenal dunia website, HTML, CSS,
-                dan teknologi digital.
+                Jelajahi berbagai website hasil karya anggota.
+                Temukan kreativitas, bisnis, teknologi,
+                dan karya digital dalam satu halaman.
             </p>
-        </div>
 
-        <div class="feature-card">
-            <div class="feature-icon">🔐</div>
-            <h3>Secure Login</h3>
-            <p>
-                Tampilan halaman login modern
-                untuk akses akun pengguna.
-            </p>
-        </div>
-
-        <div class="feature-card">
-            <div class="feature-icon">📱</div>
-            <h3>QR Generator</h3>
-            <p>
-                Buat QR Code dari teks, alamat website,
-                atau informasi lainnya.
-            </p>
-        </div>
-
-    </div>
-
-</section>
-
-<!-- LOGIN SECTION -->
-<section class="login-section section" id="login">
-
-    <div class="login-info">
-        <span class="hero-label">MEMBER ACCESS</span>
-
-        <h2>Welcome Back!</h2>
-
-        <p>
-            Masuk ke akun kamu dan mulai menjelajahi
-            berbagai fitur Web Area.
-        </p>
-
-        <div class="login-benefits">
-            <p>✓ Tampilan modern dan responsif</p>
-            <p>✓ Akses fitur digital</p>
-            <p>✓ QR Code Generator</p>
-            <p>✓ Belajar teknologi</p>
-        </div>
-    </div>
-
-    <div class="login-card">
-
-        <div class="login-icon">✦</div>
-
-        <h2>Sign In</h2>
-
-        <p class="login-subtitle">
-            Use your account to sign in.
-        </p>
-
-        <form id="loginForm">
-
-            <label>Email Address</label>
-            <input
-                type="email"
-                id="email"
-                placeholder="Masukkan email kamu"
-                required
-            >
-
-            <label>Password</label>
-
-            <div class="password-box">
-                <input
-                    type="password"
-                    id="password"
-                    placeholder="Masukkan password"
-                    required
-                >
-                <button type="button" id="togglePassword">👁</button>
-            </div>
-
-            <button type="submit" class="login-button">
-                Sign In →
-            </button>
-
-        </form>
-
-        <button class="google-button" id="googleButton">
-            <span>G</span> Continue with Google
-        </button>
-
-        <p class="login-note" id="loginMessage">
-            Belum memiliki akun? Hubungi administrator.
-        </p>
-
-    </div>
-
-</section>
-
-<!-- QR GENERATOR -->
-<section class="qr-section section" id="qr">
-
-    <div class="section-heading">
-        <span>SMART TECHNOLOGY</span>
-        <h2>Text to QR Code</h2>
-        <p>
-            Ubah teks atau URL menjadi QR Code
-            dengan mudah dan cepat.
-        </p>
-    </div>
-
-    <div class="qr-card">
-
-        <div class="qr-form">
-            <label for="qrText">Masukkan Teks atau URL</label>
-
-            <textarea
-                id="qrText"
-                placeholder="Contoh: https://github.com"
-            ></textarea>
-
-            <button id="generateQR" class="btn-primary">
-                Buat QR Code
-            </button>
-
-            <button id="clearQR" class="clear-button">
-                Hapus
-            </button>
-
-            <p id="qrMessage"></p>
-        </div>
-
-        <div class="qr-result">
-
-            <div id="qrPlaceholder">
-                <div class="qr-placeholder-icon">▦</div>
-                <h3>QR Code Preview</h3>
-                <p>QR Code kamu akan muncul di sini.</p>
-            </div>
-
-            <img id="qrImage" alt="QR Code hasil generator">
-
-            <a id="downloadQR" download="web-area-qrcode.png">
-                Download QR Code ↓
+            <a href="#anggota" class="hero-button">
+                Lihat Semua Website →
             </a>
+        </div>
+
+    </section>
+
+    <!-- DAFTAR WEBSITE -->
+    <section class="anggota" id="anggota">
+
+        <div class="section-title">
+            <p>OUR MEMBERS</p>
+            <h2>Daftar Website Anggota</h2>
+            <span>Silakan pilih website yang ingin kamu kunjungi.</span>
+        </div>
+
+        <!-- SEARCH -->
+        <div class="search-box">
+            <input
+                type="text"
+                id="searchInput"
+                placeholder="Cari nama anggota..."
+                onkeyup="cariWebsite()"
+            >
+        </div>
+
+        <!-- WEBSITE CARDS -->
+        <div class="website-grid" id="websiteGrid">
+
+            <div class="card">
+                <div class="number">01</div>
+                <h3>Kholid</h3>
+                <p>Luthan Store</p>
+                <a href="https://luthanstore.my.id" target="_blank" rel="noopener noreferrer">Kunjungi Website →</a>
+            </div>
+
+            <div class="card">
+                <div class="number">02</div>
+                <h3>Roihul</h3>
+                <p>Royhul King</p>
+                <a href="https://royhulking.my.id" target="_blank" rel="noopener noreferrer">Kunjungi Website →</a>
+            </div>
+
+            <div class="card">
+                <div class="number">03</div>
+                <h3>Hamid</h3>
+                <p>Jasa Sewa Mobil</p>
+                <a href="https://jasasewamobil.my.id" target="_blank" rel="noopener noreferrer">Kunjungi Website →</a>
+            </div>
+
+            <div class="card">
+                <div class="number">04</div>
+                <h3>Rian</h3>
+                <p>Baju Kita</p>
+                <a href="https://bajukita.my.id" target="_blank" rel="noopener noreferrer">Kunjungi Website →</a>
+            </div>
+
+            <div class="card">
+                <div class="number">05</div>
+                <h3>Nofal</h3>
+                <p>Vall Shop</p>
+                <a href="https://vallshop.my.id" target="_blank" rel="noopener noreferrer">Kunjungi Website →</a>
+            </div>
+
+            <div class="card">
+                <div class="number">06</div>
+                <h3>Alfin</h3>
+                <p>AW Store</p>
+                <a href="https://awstore.my.id" target="_blank" rel="noopener noreferrer">Kunjungi Website →</a>
+            </div>
+
+            <div class="card">
+                <div class="number">07</div>
+                <h3>Sohib</h3>
+                <p>Smailk</p>
+                <a href="https://smailk.my.id" target="_blank" rel="noopener noreferrer">Kunjungi Website →</a>
+            </div>
+
+            <div class="card">
+                <div class="number">08</div>
+                <h3>Nor Kholis</h3>
+                <p>Website Nor Kholis</p>
+                <a href="https://nor-kholis.my.id" target="_blank" rel="noopener noreferrer">Kunjungi Website →</a>
+            </div>
+
+            <div class="card">
+                <div class="number">09</div>
+                <h3>Fathur</h3>
+                <p>Sekolah Digital</p>
+                <a href="https://sekolah-digital.my.id" target="_blank" rel="noopener noreferrer">Kunjungi Website →</a>
+            </div>
+
+            <div class="card">
+                <div class="number">10</div>
+                <h3>Waris</h3>
+                <p>Luxe Damour</p>
+                <a href="https://luxedamour.my.id" target="_blank" rel="noopener noreferrer">Kunjungi Website →</a>
+            </div>
+
+            <div class="card">
+                <div class="number">11</div>
+                <h3>Yakin</h3>
+                <p>Alat Alat Jaringan Komputer</p>
+                <a href="https://alatalatjaringankomputer.my.id" target="_blank" rel="noopener noreferrer">Kunjungi Website →</a>
+            </div>
+
+            <div class="card">
+                <div class="number">12</div>
+                <h3>Rofiki</h3>
+                <p>VKY Boys</p>
+                <a href="https://vkyboys.my.id" target="_blank" rel="noopener noreferrer">Kunjungi Website →</a>
+            </div>
+
+            <div class="card">
+                <div class="number">13</div>
+                <h3>Beni</h3>
+                <p>Beni Mohammad</p>
+                <a href="https://benymohammad.my.id" target="_blank" rel="noopener noreferrer">Kunjungi Website →</a>
+            </div>
+
+            <div class="card">
+                <div class="number">14</div>
+                <h3>Anas</h3>
+                <p>Anas Clip 7</p>
+                <a href="https://anascllip7.my.id" target="_blank" rel="noopener noreferrer">Kunjungi Website →</a>
+            </div>
+
+            <div class="card">
+                <div class="number">15</div>
+                <h3>Ajil</h3>
+                <p>Wrieel Store</p>
+                <a href="https://wrieelstore.my.id" target="_blank" rel="noopener noreferrer">Kunjungi Website →</a>
+            </div>
+
+            <div class="card">
+                <div class="number">16</div>
+                <h3>Miftahul</h3>
+                <p>Huda Sari</p>
+                <a href="https://hudasari2008.my.id" target="_blank" rel="noopener noreferrer">Kunjungi Website →</a>
+            </div>
+
+            <div class="card">
+                <div class="number">17</div>
+                <h3>Jati</h3>
+                <p>Jackhy Explore</p>
+                <a href="https://jackhyexplore.my.id" target="_blank" rel="noopener noreferrer">Kunjungi Website →</a>
+            </div>
+
+            <div class="card">
+                <div class="number">18</div>
+                <h3>Rizal</h3>
+                <p>Lil Rizz</p>
+                <a href="https://lilrizz.my.id" target="_blank" rel="noopener noreferrer">Kunjungi Website →</a>
+            </div>
+
+            <div class="card">
+                <div class="number">19</div>
+                <h3>Athoilah</h3>
+                <p>Siswa Mikrotik</p>
+                <a href="https://siswamikrotik.my.id" target="_blank" rel="noopener noreferrer">Kunjungi Website →</a>
+            </div>
+
+            <div class="card">
+                <div class="number">20</div>
+                <h3>Habiburrahman</h3>
+                <p>Wearza</p>
+                <a href="https://wearza.my.id" target="_blank" rel="noopener noreferrer">Kunjungi Website →</a>
+            </div>
+
+            <div class="card">
+                <div class="number">21</div>
+                <h3>Aditiya</h3>
+                <p>Alfatih N</p>
+                <a href="https://profilsantri.github.io/alfatih_n" target="_blank" rel="noopener noreferrer">Kunjungi Website →</a>
+            </div>
+
+            <div class="card">
+                <div class="number">22</div>
+                <h3>Ibrahim</h3>
+                <p>Profil Santri Ibrahim</p>
+                <a href="https://profilsantri.github.io/ibrahim" target="_blank" rel="noopener noreferrer">Kunjungi Website →</a>
+            </div>
+
+            <div class="card">
+                <div class="number">23</div>
+                <h3>Hidayat</h3>
+                <p>Zenith Projek</p>
+                <a href="https://hidayatnor678-bot.github.io/zenithprojekk" target="_blank" rel="noopener noreferrer">Kunjungi Website →</a>
+            </div>
+
+            <div class="card">
+                <div class="number">24</div>
+                <h3>Rofi'i</h3>
+                <p>Website Rofi</p>
+                <a href="https://ahmadrofie251-lgtm.github.io/rofi" target="_blank" rel="noopener noreferrer">Kunjungi Website →</a>
+            </div>
+
+            <div class="card">
+                <div class="number">25</div>
+                <h3>Farid</h3>
+                <p>Farid Darmawan</p>
+                <a href="https://fariddarmawan.github.io" target="_blank" rel="noopener noreferrer">Kunjungi Website →</a>
+            </div>
+
+            <div class="card">
+                <div class="number">26</div>
+                <h3>Fahri</h3>
+                <p>Website Fahri</p>
+                <a href="https://fahrikor.github.io" target="_blank" rel="noopener noreferrer">Kunjungi Website →</a>
+            </div>
+
+            <div class="card">
+                <div class="number">27</div>
+                <h3>Nasril</h3>
+                <p>Website Belum Tersedia</p>
+                <span class="coming">Segera Hadir</span>
+            </div>
 
         </div>
 
-    </div>
-
-</section>
-
-<!-- LEARNING SECTION -->
-<section class="learning-section section">
-
-    <div class="section-heading">
-        <span>START YOUR JOURNEY</span>
-        <h2>Learn And Grow</h2>
-        <p>
-            Tingkatkan kemampuanmu melalui pembelajaran teknologi.
+        <p id="noResult" class="no-result">
+            Nama tidak ditemukan.
         </p>
-    </div>
 
-    <div class="learning-grid">
+    </section>
 
-        <div class="learning-card">
-            <img
-                src="images/online-connection.png"
-                alt="Online Connection"
-                onerror="this.src='https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=700'"
-            >
-            <div class="learning-content">
-                <span>LESSON 01</span>
-                <h3>Welcome to Web Area</h3>
-                <p>Mengenal dunia internet dan teknologi website.</p>
-                <a href="#home">Pelajari →</a>
-            </div>
-        </div>
+    <!-- TENTANG -->
+    <section class="tentang" id="tentang">
 
-        <div class="learning-card">
-            <img
-                src="images/chatting.png"
-                alt="Communication Technology"
-                onerror="this.src='https://images.unsplash.com/photo-1551434678-e076c223a692?w=700'"
-            >
-            <div class="learning-content">
-                <span>LESSON 02</span>
-                <h3>Web Development</h3>
-                <p>Belajar dasar pengembangan website modern.</p>
-                <a href="#belajar">Pelajari →</a>
-            </div>
-        </div>
+        <h2>Tentang Santri Web</h2>
 
-    </div>
+        <p>
+            Santri Web merupakan halaman kumpulan website
+            karya anggota. Dibuat untuk memperkenalkan
+            kreativitas, kemampuan teknologi, dan karya
+            digital setiap anggota.
+        </p>
 
-</section>
+    </section>
 
-<!-- CTA -->
-<section class="cta-section">
-    <span>YOUR DIGITAL FUTURE STARTS HERE</span>
-    <h2>Let's Build Your Future!</h2>
-    <p>
-        Belajar, berkembang, dan ciptakan sesuatu
-        yang bermanfaat dengan teknologi.
-    </p>
-    <a href="#qr" class="btn-primary">Coba QR Generator →</a>
-</section>
+    <!-- FOOTER -->
+    <footer>
+        <h3>SANTRI<span>WEB</span></h3>
 
-<!-- FOOTER -->
-<footer class="footer">
+        <p>© 2026 Santri Web. All Rights Reserved.</p>
 
-    <a href="#home" class="logo">
-        WEB<span>AREA.</span>
-    </a>
+        <p>Dibuat dengan kreativitas dan teknologi.</p>
+    </footer>
 
-    <p>
-        Digital Technology | Web Development | QR Generator
-    </p>
+    <!-- JAVASCRIPT SEARCH -->
+    <script>
+        function cariWebsite() {
 
-    <div class="footer-links">
-        <a href="#home">Beranda</a>
-        <a href="#login">Login</a>
-        <a href="#qr">QR Code</a>
-        <a href="#belajar">Belajar</a>
-    </div>
+            let input = document
+                .getElementById("searchInput")
+                .value.toLowerCase();
 
-    <div class="copyright">
-        © 2026 WEB AREA. All Rights Reserved.
-    </div>
+            let cards = document.querySelectorAll(".card");
+            let jumlah = 0;
 
-</footer>
+            cards.forEach(function(card) {
 
-<!-- JAVASCRIPT -->
-<script>
+                let nama = card.innerText.toLowerCase();
 
-// PASSWORD SHOW / HIDE
-const password = document.getElementById("password");
-const togglePassword = document.getElementById("togglePassword");
+                if (nama.includes(input)) {
+                    card.style.display = "block";
+                    jumlah++;
+                } else {
+                    card.style.display = "none";
+                }
 
-togglePassword.addEventListener("click", function () {
-    if (password.type === "password") {
-        password.type = "text";
-    } else {
-        password.type = "password";
-    }
-});
+            });
 
-// LOGIN DEMO
-document.getElementById("loginForm").addEventListener("submit", function(e) {
-    e.preventDefault();
-
-    const email = document.getElementById("email").value;
-
-    document.getElementById("loginMessage").textContent =
-        "Form berhasil diisi untuk " + email +
-        ". Hubungkan Firebase untuk login sungguhan.";
-});
-
-// GOOGLE LOGIN DEMO
-document.getElementById("googleButton").addEventListener("click", function() {
-    alert("Google Sign-In membutuhkan konfigurasi Firebase Authentication.");
-});
-
-// QR GENERATOR
-const qrText = document.getElementById("qrText");
-const qrImage = document.getElementById("qrImage");
-const qrPlaceholder = document.getElementById("qrPlaceholder");
-const downloadQR = document.getElementById("downloadQR");
-const qrMessage = document.getElementById("qrMessage");
-
-document.getElementById("generateQR").addEventListener("click", function() {
-
-    const text = qrText.value.trim();
-
-    if (text === "") {
-        qrMessage.textContent = "Silakan masukkan teks atau URL terlebih dahulu.";
-        return;
-    }
-
-    const qrURL =
-        "https://api.qrserver.com/v1/create-qr-code/?size=300x300&data=" +
-        encodeURIComponent(text);
-
-    qrImage.src = qrURL;
-
-    qrImage.onload = function() {
-        qrPlaceholder.style.display = "none";
-        qrImage.style.display = "block";
-        downloadQR.style.display = "inline-block";
-        downloadQR.href = qrURL;
-        qrMessage.textContent = "QR Code berhasil dibuat!";
-    };
-
-    qrImage.onerror = function() {
-        qrMessage.textContent = "Gagal membuat QR Code. Periksa koneksi internet.";
-    };
-
-});
-
-// CLEAR QR
-document.getElementById("clearQR").addEventListener("click", function() {
-    qrText.value = "";
-    qrImage.style.display = "none";
-    qrPlaceholder.style.display = "block";
-    downloadQR.style.display = "none";
-    qrMessage.textContent = "";
-});
-
-</script>
+            document.getElementById("noResult").style.display =
+                jumlah === 0 ? "block" : "none";
+        }
+    </script>
 
 </body>
 </html>
-
