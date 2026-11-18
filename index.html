@@ -1,1 +1,427 @@
 
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#071525">
+    <meta name="description" content="WEB AREA - Belajar teknologi, jaringan komputer, dan membuat QR Code.">
+
+    <title>WEB AREA | Digital Technology</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<!-- BACKGROUND EFFECT -->
+<div class="background-glow"></div>
+
+<!-- NAVBAR -->
+<header class="navbar">
+    <a href="#home" class="logo">
+        WEB<span>AREA.</span>
+    </a>
+
+    <nav>
+        <a href="#home">Beranda</a>
+        <a href="#login">Login</a>
+        <a href="#qr">QR Code</a>
+        <a href="#belajar">Belajar</a>
+    </nav>
+
+    <a href="#login" class="nav-button">Mulai Sekarang</a>
+</header>
+
+<!-- HERO SECTION -->
+<section class="hero" id="home">
+
+    <div class="hero-content">
+
+        <span class="hero-label">
+            ✦ DIGITAL TECHNOLOGY 2026
+        </span>
+
+        <h1>
+            WELCOME TO<br>
+            <span>WEB AREA</span>
+        </h1>
+
+        <p>
+            Selamat datang di Web Area. Tempat belajar teknologi,
+            jaringan komputer, membuat QR Code, dan mengembangkan
+            kemampuan digital masa depan.
+        </p>
+
+        <div class="hero-buttons">
+            <a href="#login" class="btn-primary">Mulai Belajar →</a>
+            <a href="#belajar" class="btn-outline">Jelajahi Website</a>
+        </div>
+
+        <div class="hero-stats">
+            <div>
+                <h3>100%</h3>
+                <p>Digital</p>
+            </div>
+            <div>
+                <h3>24/7</h3>
+                <p>Online</p>
+            </div>
+            <div>
+                <h3>TKJ</h3>
+                <p>Technology</p>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="hero-image">
+        <div class="image-circle"></div>
+
+        <img
+            src="images/Neon_Red_Cyber_Network_TKJ.png"
+            alt="Cyber Network TKJ"
+            onerror="this.src='https://images.unsplash.com/photo-1518770660439-4636190af475?w=900'"
+        >
+
+        <div class="floating-card">
+            <span class="status-dot"></span>
+            SYSTEM ONLINE
+        </div>
+    </div>
+
+</section>
+
+<!-- ABOUT -->
+<section class="about section" id="belajar">
+
+    <div class="section-heading">
+        <span>ABOUT WEB AREA</span>
+        <h2>Explore The Digital World</h2>
+        <p>
+            Kenali teknologi dan pelajari berbagai fitur
+            yang tersedia dalam website ini.
+        </p>
+    </div>
+
+    <div class="feature-grid">
+
+        <div class="feature-card">
+            <div class="feature-icon">🌐</div>
+            <h3>Web Technology</h3>
+            <p>
+                Mengenal dunia website, HTML, CSS,
+                dan teknologi digital.
+            </p>
+        </div>
+
+        <div class="feature-card">
+            <div class="feature-icon">🔐</div>
+            <h3>Secure Login</h3>
+            <p>
+                Tampilan halaman login modern
+                untuk akses akun pengguna.
+            </p>
+        </div>
+
+        <div class="feature-card">
+            <div class="feature-icon">📱</div>
+            <h3>QR Generator</h3>
+            <p>
+                Buat QR Code dari teks, alamat website,
+                atau informasi lainnya.
+            </p>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- LOGIN SECTION -->
+<section class="login-section section" id="login">
+
+    <div class="login-info">
+        <span class="hero-label">MEMBER ACCESS</span>
+
+        <h2>Welcome Back!</h2>
+
+        <p>
+            Masuk ke akun kamu dan mulai menjelajahi
+            berbagai fitur Web Area.
+        </p>
+
+        <div class="login-benefits">
+            <p>✓ Tampilan modern dan responsif</p>
+            <p>✓ Akses fitur digital</p>
+            <p>✓ QR Code Generator</p>
+            <p>✓ Belajar teknologi</p>
+        </div>
+    </div>
+
+    <div class="login-card">
+
+        <div class="login-icon">✦</div>
+
+        <h2>Sign In</h2>
+
+        <p class="login-subtitle">
+            Use your account to sign in.
+        </p>
+
+        <form id="loginForm">
+
+            <label>Email Address</label>
+            <input
+                type="email"
+                id="email"
+                placeholder="Masukkan email kamu"
+                required
+            >
+
+            <label>Password</label>
+
+            <div class="password-box">
+                <input
+                    type="password"
+                    id="password"
+                    placeholder="Masukkan password"
+                    required
+                >
+                <button type="button" id="togglePassword">👁</button>
+            </div>
+
+            <button type="submit" class="login-button">
+                Sign In →
+            </button>
+
+        </form>
+
+        <button class="google-button" id="googleButton">
+            <span>G</span> Continue with Google
+        </button>
+
+        <p class="login-note" id="loginMessage">
+            Belum memiliki akun? Hubungi administrator.
+        </p>
+
+    </div>
+
+</section>
+
+<!-- QR GENERATOR -->
+<section class="qr-section section" id="qr">
+
+    <div class="section-heading">
+        <span>SMART TECHNOLOGY</span>
+        <h2>Text to QR Code</h2>
+        <p>
+            Ubah teks atau URL menjadi QR Code
+            dengan mudah dan cepat.
+        </p>
+    </div>
+
+    <div class="qr-card">
+
+        <div class="qr-form">
+            <label for="qrText">Masukkan Teks atau URL</label>
+
+            <textarea
+                id="qrText"
+                placeholder="Contoh: https://github.com"
+            ></textarea>
+
+            <button id="generateQR" class="btn-primary">
+                Buat QR Code
+            </button>
+
+            <button id="clearQR" class="clear-button">
+                Hapus
+            </button>
+
+            <p id="qrMessage"></p>
+        </div>
+
+        <div class="qr-result">
+
+            <div id="qrPlaceholder">
+                <div class="qr-placeholder-icon">▦</div>
+                <h3>QR Code Preview</h3>
+                <p>QR Code kamu akan muncul di sini.</p>
+            </div>
+
+            <img id="qrImage" alt="QR Code hasil generator">
+
+            <a id="downloadQR" download="web-area-qrcode.png">
+                Download QR Code ↓
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- LEARNING SECTION -->
+<section class="learning-section section">
+
+    <div class="section-heading">
+        <span>START YOUR JOURNEY</span>
+        <h2>Learn And Grow</h2>
+        <p>
+            Tingkatkan kemampuanmu melalui pembelajaran teknologi.
+        </p>
+    </div>
+
+    <div class="learning-grid">
+
+        <div class="learning-card">
+            <img
+                src="images/online-connection.png"
+                alt="Online Connection"
+                onerror="this.src='https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=700'"
+            >
+            <div class="learning-content">
+                <span>LESSON 01</span>
+                <h3>Welcome to Web Area</h3>
+                <p>Mengenal dunia internet dan teknologi website.</p>
+                <a href="#home">Pelajari →</a>
+            </div>
+        </div>
+
+        <div class="learning-card">
+            <img
+                src="images/chatting.png"
+                alt="Communication Technology"
+                onerror="this.src='https://images.unsplash.com/photo-1551434678-e076c223a692?w=700'"
+            >
+            <div class="learning-content">
+                <span>LESSON 02</span>
+                <h3>Web Development</h3>
+                <p>Belajar dasar pengembangan website modern.</p>
+                <a href="#belajar">Pelajari →</a>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- CTA -->
+<section class="cta-section">
+    <span>YOUR DIGITAL FUTURE STARTS HERE</span>
+    <h2>Let's Build Your Future!</h2>
+    <p>
+        Belajar, berkembang, dan ciptakan sesuatu
+        yang bermanfaat dengan teknologi.
+    </p>
+    <a href="#qr" class="btn-primary">Coba QR Generator →</a>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+
+    <a href="#home" class="logo">
+        WEB<span>AREA.</span>
+    </a>
+
+    <p>
+        Digital Technology | Web Development | QR Generator
+    </p>
+
+    <div class="footer-links">
+        <a href="#home">Beranda</a>
+        <a href="#login">Login</a>
+        <a href="#qr">QR Code</a>
+        <a href="#belajar">Belajar</a>
+    </div>
+
+    <div class="copyright">
+        © 2026 WEB AREA. All Rights Reserved.
+    </div>
+
+</footer>
+
+<!-- JAVASCRIPT -->
+<script>
+
+// PASSWORD SHOW / HIDE
+const password = document.getElementById("password");
+const togglePassword = document.getElementById("togglePassword");
+
+togglePassword.addEventListener("click", function () {
+    if (password.type === "password") {
+        password.type = "text";
+    } else {
+        password.type = "password";
+    }
+});
+
+// LOGIN DEMO
+document.getElementById("loginForm").addEventListener("submit", function(e) {
+    e.preventDefault();
+
+    const email = document.getElementById("email").value;
+
+    document.getElementById("loginMessage").textContent =
+        "Form berhasil diisi untuk " + email +
+        ". Hubungkan Firebase untuk login sungguhan.";
+});
+
+// GOOGLE LOGIN DEMO
+document.getElementById("googleButton").addEventListener("click", function() {
+    alert("Google Sign-In membutuhkan konfigurasi Firebase Authentication.");
+});
+
+// QR GENERATOR
+const qrText = document.getElementById("qrText");
+const qrImage = document.getElementById("qrImage");
+const qrPlaceholder = document.getElementById("qrPlaceholder");
+const downloadQR = document.getElementById("downloadQR");
+const qrMessage = document.getElementById("qrMessage");
+
+document.getElementById("generateQR").addEventListener("click", function() {
+
+    const text = qrText.value.trim();
+
+    if (text === "") {
+        qrMessage.textContent = "Silakan masukkan teks atau URL terlebih dahulu.";
+        return;
+    }
+
+    const qrURL =
+        "https://api.qrserver.com/v1/create-qr-code/?size=300x300&data=" +
+        encodeURIComponent(text);
+
+    qrImage.src = qrURL;
+
+    qrImage.onload = function() {
+        qrPlaceholder.style.display = "none";
+        qrImage.style.display = "block";
+        downloadQR.style.display = "inline-block";
+        downloadQR.href = qrURL;
+        qrMessage.textContent = "QR Code berhasil dibuat!";
+    };
+
+    qrImage.onerror = function() {
+        qrMessage.textContent = "Gagal membuat QR Code. Periksa koneksi internet.";
+    };
+
+});
+
+// CLEAR QR
+document.getElementById("clearQR").addEventListener("click", function() {
+    qrText.value = "";
+    qrImage.style.display = "none";
+    qrPlaceholder.style.display = "block";
+    downloadQR.style.display = "none";
+    qrMessage.textContent = "";
+});
+
+</script>
+
+</body>
+</html>
+
